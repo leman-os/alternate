@@ -10,21 +10,34 @@
 	color: #fff
 
 body
-	font-size: 14px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: $default-font
-	overflow-x: hidden
-	color: $text
-	input, textarea
+  font-size: 16px
+  background: url(../img/_src/bgb.jpg)
+  background-attachment: fixed
+  background-size: cover
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+  input, textarea
 		border: #666 1px solid
 		outline: none
 		&:focus:required:invalid
 			border-color: red
 		&:required:valid
 			border-color: green
-
+h1 
+  text-align: center
+  width: 100%
+p 
+  font-weight: 100
+  text-align: justify
+  text-indent: 1.5em
+  padding: 15px
+.container
+  background-color: #fff
+  padding: 5px 30px
 .img-responsive
 	display: block
 	max-width: 100%
@@ -47,44 +60,127 @@ b, strong
 	text-align: center
 	padding-top: 15px
 .topadr
-	text-align: center
-	content: ' '
-	position: absolute
-	background: url("../img/_src/location.png") 0 0 no-repeat
-	-webkit-background-size: contain
-	background-size: contain
-	height: 49px
-	padding-left: 59px
-	margin-top: 23px
+	a
+    font-size: 14px
+    text-align: left
+    content: ' '
+    position: absolute
+    background: url("../img/_src/location.png") 0 0 no-repeat
+    -webkit-background-size: contain
+    background-size: contain
+    height: 35px
+    padding-left: 45px
+    margin-top: 23px
+    font-weight: 300
+    color: #000000
+    &:hover
+      text-decoration: none
+      color: #000000
+      font-weight: 100
 .topphone
 	float: right
-	font-size: 32px
+	font-size: 25px
 	margin-top: 15px
+	font-weight: 300
 	a 
-		font-size: 16px
+		font-size: 14px
 		text-align: center
 	content: ' '
 	position: absolute
 	background: url("../img/_src/phone.png") 0 0 no-repeat
 	-webkit-background-size: contain
 	background-size: contain
-	height: 57px
-	padding-left: 66px
-	margin-top: 14px
+	height: 35px
+	padding-left: 45px
+	margin-top: 23px
 	margin-left: 33px
 	color: #FF7400
+	right: 15px
 .callb
 	text-align: center
 	display: block
-	margin-top: -27px
-.nav
-	li 
-		list-style: none
-		padding: 5px 10px
-		display: inline-block
-		float: left
-	.sub-menu
-		display: none
-		li 
-			display: inline
+	margin-top: -19px
+
+.phone
+	margin-top: -4px	
+	font-weight: 300
+  
+
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+nav
+  font-size: 16px
+  font-weight: 100
+  text-decoration: underline
+  top: 0
+  left: 0
+  width: 100%
+  background: #fff
+  border-top: 1px solid rgba(0, 0, 0, 0.1)
+  margin-top: 15px
+  ul
+    list-style: none
+    position: relative
+    float: left
+    margin-right: 100px
+    display: inline-table
+    margin-bottom: 0
+    li
+      float: left
+      -webkit-transition: all .2s ease-in-out
+      -moz-transition: all .2s ease-in-out
+      transition: all .2s ease-in-out
+      &:hover
+        background: rgba(0, 0, 0, 0.15)
+        > ul
+          display: block
+      float: left
+      -webkit-transition: all .2s ease-in-out
+      -moz-transition: all .2s ease-in-out
+      transition: all .2s ease-in-out
+      a
+        display: block
+        padding: 10px 15px
+        color: #222
+        font-size: .9em
+        letter-spacing: 1px
+        text-decoration: none
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+            color: #222
+    ul
+      display: none
+      background: #fff
+      position: absolute
+      top: 100%
+      box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, 0.1)
+      border: 1px solid rgba(0, 0, 0, 0.1)
+      z-index: 1
+      li
+        float: none
+        position: relative
+        a
+          padding: 10px 15px
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+      ul
+        position: absolute
+        left: 100%
+        top: 0
+
+  
+.bx-wrapper
+  border: none
 @import "media" // Always at the end

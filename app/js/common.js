@@ -10,6 +10,9 @@ $('.nav li > .sub-menu').parent().hover(function() {
 	} else {
 	  $(submenu).slideUp(200);
 	}
-  });
+	});
+	$(document).ready(function(){
+		$('.bxslider').bxSlider();
+	});
 
 });
