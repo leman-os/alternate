@@ -10,8 +10,9 @@
 	color: #fff
 
 body
-  font-size: 16px
-  background: url(../img/_src/bgb.jpg)
+	font-size: 16px
+	// background: url(../img/_src/bgb.jpg)
+	background-color: #c9ceab
   background-attachment: fixed
   background-size: cover
   min-width: 320px
@@ -20,7 +21,7 @@ body
   font-family: $default-font
   overflow-x: hidden
   color: $text
-  input, textarea
+	input, textarea
 		border: #666 1px solid
 		outline: none
 		&:focus:required:invalid
@@ -71,17 +72,17 @@ b, strong
     height: 35px
     padding-left: 45px
     margin-top: 23px
-    font-weight: 300
-    color: #000000
+    font-weight: 700
+    color: #15466d
     &:hover
       text-decoration: none
-      color: #000000
-      font-weight: 100
+      color: #15466d
+      font-weight: 700
 .topphone
 	float: right
 	font-size: 25px
 	margin-top: 15px
-	font-weight: 300
+	font-weight: 700
 	a 
 		font-size: 14px
 		text-align: center
@@ -94,16 +95,18 @@ b, strong
 	padding-left: 45px
 	margin-top: 23px
 	margin-left: 33px
-	color: #FF7400
+	color: #15466d
 	right: 15px
 .callb
 	text-align: center
 	display: block
 	margin-top: -19px
+	a
+		color: #ff7400
 
 .phone
 	margin-top: -4px	
-	font-weight: 300
+	font-weight: 700
   
 
 
@@ -154,7 +157,6 @@ nav
         display: block
         padding: 10px 15px
         color: #222
-        font-size: .9em
         letter-spacing: 1px
         text-decoration: none
         text-decoration: underline
@@ -180,7 +182,17 @@ nav
         left: 100%
         top: 0
 
-  
+
+.adv
+	.item
+		img
+			height: 80px
+			margin: 0 auto
+			display: block	
+		h3 
+			text-align: center
+			display: block
+
 .bx-wrapper
   border: none
 @import "media" // Always at the end
