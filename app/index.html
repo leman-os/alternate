@@ -27,10 +27,11 @@
 </head>
 
 <body>
+		
 	<div class="container">
 <!-- topline -->
 		<div class="row">
-			<div class="topline"></div>
+				<div class="topline"></div>
 			<div class="col-2">
 				<div class="logo">
 					<a href="/"><img src="img/_src/ac_logo.gif" alt=""></a> 
@@ -78,9 +79,8 @@
 				</ul>
 			</nav>  
 		</div>
-	</div>
 <!-- slider -->
-<div class="container">	
+
 	<div class="row">
 		<ul class="bxslider">
 			<li><img src="img/_src/preview.jpg" /></li>
@@ -89,19 +89,19 @@
 			<li><img src="img/_src/preview.jpg" /></li>
 		</ul>
 	</div>
-</div>	
+
 <!-- about -->
-<div class="container">
+
 	<div class="row">
 		<h1>Юридические, бухгалтерские, экспертные услуги в Обнинске</h1>
 		<p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Подпоясал строчка семь дороге напоивший первую, подзаголовок раз курсивных текстами ручеек. Домах запятых эта это рот сих путь которой даже.
 		Жизни оксмокс ручеек несколько? Выйти правилами ему от всех, последний вопроса лучше они языком живет переписали власти большой если текстов моей безопасную своего своих путь силуэт себя прямо что предупредила. Журчит.
 		Он что дорогу грустный, вершину ты путь прямо, силуэт переписали рыбного за, свой ручеек большой жаренные. Даль пустился жизни ее пояс меня продолжил возвращайся имени, дал текста коварный, предупредила повстречался.</p>
 	</div>
-</div>
+
 
 <!-- advantage -->
-<div class="container">
+
 	<div class="row adv">
 		<div class="col-md-4">
 			<div class="item">
@@ -148,10 +148,10 @@
 			</div>
 		</div>
 	</div>
-</div>
+
 <!-- services -->
 
-<div class="container">
+
 	<h2>Наши услуги</h2>
 	<div class="row">
 		<div class="col-md-4">
@@ -284,30 +284,38 @@
 	</div>
 
 <!-- form	 -->
-	<form class="form1 zakazf" method="post" name="form2">
+	<div class="row">
 		<h2>Оставьте свой номер телефона и мы с вами свяжемся</h2>
-		<select name="products">
-			<option value="">Выберите категорию вопроса</option>
-			<option value="Трубчатые (ТЭН)">Юридические услуги</option>
-			<option value="Патронные (ТЭНП)">Создание, реорганизация, ликвидация предприятий</option>
-			<option value="Угловые (ТЭНУ)">Банкротство физических и юридических лиц</option>
-			<option value="Фигурные (ТЭНФ)">Проверка контрагентов, истребование долгов</option>
-			<option value="С оребрением (ТЭНР)">Урегулирование споров</option>
-			<option value="Блочные (ТЭНБ)">Аудит, ревизии, инвентаризация</option>
-			<option value="Хомутовые (ХН)">Экспертиза</option>
-			<option value="Полухомутовые (ПХН)">Налоговая оптимизация</option>
-			<option value="лоские (СКП)">Экономическое сопровождение</option>
-			<option value="Дисковые (СКПД)">Долевое строительство</option>
-			<option value="Крестовые (КРЭН)">Услуги для арбитражных управляющих</option>
-			<option value="Кабельные (КЭН)">Оценка</option>
-			<option value="Гибкие (ГЭН)">Другое</option>
-		</select>
-		<input type="text" name="name" id="" placeholder="Ваше имя" required="">
-		<input type="text" name="phone" id="" placeholder="Ваш телефон" required="">
-		<input type="text" name="mail" id="" placeholder="Ваша почта">
-		<textarea name="mess" id="" rows="5" placeholder="Сообщение"></textarea>
-		<input class="but1" type="submit" value="Отправить">
-	</form>
+		<div class="col-md-4">
+			<form class="form1 zakazf" method="post" name="form2">
+				<select name="products">
+					<option value="">Выберите категорию вопроса</option>
+					<option value="Трубчатые (ТЭН)">Юридические услуги</option>
+					<option value="Патронные (ТЭНП)">Создание, реорганизация, ликвидация предприятий</option>
+					<option value="Угловые (ТЭНУ)">Банкротство физических и юридических лиц</option>
+					<option value="Фигурные (ТЭНФ)">Проверка контрагентов, истребование долгов</option>
+					<option value="С оребрением (ТЭНР)">Урегулирование споров</option>
+					<option value="Блочные (ТЭНБ)">Аудит, ревизии, инвентаризация</option>
+					<option value="Хомутовые (ХН)">Экспертиза</option>
+					<option value="Полухомутовые (ПХН)">Налоговая оптимизация</option>
+					<option value="лоские (СКП)">Экономическое сопровождение</option>
+					<option value="Дисковые (СКПД)">Долевое строительство</option>
+					<option value="Крестовые (КРЭН)">Услуги для арбитражных управляющих</option>
+					<option value="Кабельные (КЭН)">Оценка</option>
+					<option value="Гибкие (ГЭН)">Другое</option>
+				</select>
+				<input type="text" name="name" id="" placeholder="Ваше имя" required="">
+				<input type="text" name="phone" id="" placeholder="Ваш телефон" required="">
+				<input type="text" name="mail" id="" placeholder="Ваша почта">
+				<textarea name="mess" id="" rows="5" placeholder="Сообщение"></textarea>
+				<input class="but1" type="submit" value="Отправить">
+			</form>
+		</div>
+		<div class="col-md-8">
+			<img class="pr100" src="img/_src/form_img.jpg" alt="">
+		</div>
+	</div>
+	
 
 <!-- articles -->
 	<div class="art">
@@ -335,7 +343,60 @@
 		</div>
 	</div>
 
+	<!-- map -->
+	<div class="row">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A89288140b6aeea4945c53c39147be810940acd8bf703da53a8ff0513f0d24b3d&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+	</div>
 
+	<!-- contact -->
+	<div class="row">
+		<h2>Контакты</h2>
+		<div class="contact">
+			<h5>Адрес: Калужская область, г. Обнинск, Пяткинский проезд, д. 10, офис 9</h5>
+			<h5>Телефон: 8 (961) 123-40-20</h5>
+			<h5>Почта: zakaz@ac-alternativa.ru</h5>
+			<h5>График работы: Пн-Пт с 8:00 до 18:00</h5>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<div class="row">
+			<col-md-4>
+				<ul>
+					<li><a href="">Юридические услуги</a></li>
+					<li><a href="">Создание, реорганизация, ликвидация предприятий</a></li>
+					<li><a href="">Банкротство физических и юридических схем</a></li>
+					<li><a href="">Проверка контрагентов и истребование долгов</a></li>
+					<li><a href="">Медиация (урегулирование споров)</a></li>
+					<li><a href="">Аудит, ревизии, инвентаризации</a></li>
+				</ul>
+			</col-md-4>
+			<col-md-4>
+				<ul>
+					<li><a href="">Экспертиза</a></li>
+					<li><a href="">Налоговая оптимизация бизнеса, проектов, сделок</a></li>
+					<li><a href="">Экономическое сопровождение проектов</a></li>
+					<li><a href="">Долевое строительство</a></li>
+					<li><a href="">Услуги для арбитражных управляющих</a></li>
+					<li><a href="">Оценка</a></li>
+				</ul>
+			</col-md-4>
+			<col-md-4>
+				<ul>
+					<li><a href="">Полезная статья 1</a></li>
+					<li><a href="">Полезная статья 2</a></li>
+					<li><a href="">Полезная статья 3</a></li>
+					<li><a href="">Полезная статья 4</a></li>
+					<li><a href="">Полезная статья 5</a></li>
+					<li><a href="">Полезная статья 6</a></li>
+				</ul>	
+			</col-md-4>
+		</div>
+		<div class="row">
+			<col-md-12></col-md-12>
+		</div>
+	</footer>
 </div>
 	<script src="js/scripts.min.js"></script>
 
