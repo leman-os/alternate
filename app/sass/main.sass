@@ -41,14 +41,18 @@ h4
 	font-size: 18px
 	margin: 0
 	margin-top: 10px
+h5 
+  font-weight: 100
+  text-align: justify
+  text-indent: 1.5em
 p 
   font-weight: 100
   text-align: justify
   text-indent: 1.5em
   padding: 15px
 .container
-  background-color: #fff
-  padding: 5px 30px
+  // background-color: #fff
+  // padding: 5px 30px
 .img-responsive
 	display: block
 	max-width: 100%
@@ -167,7 +171,7 @@ nav
         display: block
         padding: 10px 15px
         color: #222
-        letter-spacing: 1px
+        // letter-spacing: 1px
         text-decoration: none
         text-decoration: underline
         &:hover
@@ -192,6 +196,13 @@ nav
         left: 100%
         top: 0
 
+.timg
+  position: absolute
+  z-index: 1
+  top: 75px
+  left: 78px
+  font-size: 20px
+  color: yellow
 
 .adv
 	.item
@@ -239,8 +250,38 @@ figcaption
 		background-color: #bf7100
 .pr100
 	width: 100%
-.container 
+.wrapper 
 	box-shadow: 0 3px 19px -6px #000;
 .bx-wrapper
   border: none
+.contact
+  position: absolute
+  z-index: 2 
+  background-color: white
+  bottom: 15px
+  right: 15px
+  padding: 20px
+  
+.map
+  position: relative
+.foot
+  background-color: $maincolor
+  li 
+    list-style: none
+    a 
+      color: #ffffff
+      font-size: 14px
+      font-weight: 100
+      &:hover
+        color: #ffffff
+    p 
+      text-align: center
+  .cert
+    p 
+      text-align: center
+      color: #fff
+      font-size: 12px
+  padding-top: 30px
+  margin-top: 30px
+
 @import "media" // Always at the end

@@ -14,5 +14,23 @@ $('.nav li > .sub-menu').parent().hover(function() {
 	$(document).ready(function(){
 		$('.bxslider').bxSlider();
 	});
+	
+	// $('.figcaption').hover(
+	// 	function(){
+	// 	  $('.timg').hide();
+	// 	});
+		$( ".hov" ).mouseenter(function() {
+			$( ".timg" ).hide(function() {
 
+			});
+		  });
+		$( ".hov" ).mouseleave(function() {
+			$( ".timg" ).show(function() {
+
+			});
+		  });
+		
+		
 });
+
+
